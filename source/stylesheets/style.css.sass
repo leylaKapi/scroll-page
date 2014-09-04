@@ -129,6 +129,10 @@ header
   position: absolute
   top: 350px
 
+.ipad_img
+  position: absolute
+  top: 130px
+  left: 0px
 
 
 .main section
@@ -168,25 +172,41 @@ header
       padding-left: 20px
 
   &.page2
-    background: #9ab5b0
+    background: #d9d9d9
     .page_container
-      margin-top: 20px
+      width: 850px
+      height: 450px
+      margin-top: -10px
       position: relative
       float: right
       overflow: hidden
+      left: -6px
     h1
       text-align: center
       padding: 0
       margin-bottom: 15px
       font-size: 50px
       letter-spacing: -1px
-      color: #45394a
+      color: rgb(27, 34, 79)
     h2
       color: rgba(116, 82, 101, 0.85)
       text-align: center
-      line-height: 160%
+      line-height: 120%
       font-weight: 100
-
+      position: relative
+      left: 41px
+    .btn-github
+      @extend .btn-purple
+      background: rgb(31, 38, 93)
+      border: 3px solid #2e357b
+      height: 50px
+      float: right
+      text-align: center
+      top: 33px
+      position: relative
+      left: 250px
+      &:hover
+        color: whitesmoke
 .viewing-page-2
   background: rgba(0, 0, 0, 0.25)
   color: #FFF
