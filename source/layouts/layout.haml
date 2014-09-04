@@ -1,0 +1,31 @@
+!!!
+%html{ :lang => "en"}
+    %head
+        %meta{:charset => "utf-8"}
+        %title= data.page.title
+        %title jQuery One Page Scroll by Pete R. | The Pete Design
+        %meta{:content => "jQuery One Page Scroll by Pete R. | The Pete Design", :name => "title"}/
+        %meta{:content => "Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin", :name => "description"}/
+        %link{:href => "/images/notify_better_image.png", :rel => "image_src"}/
+        %meta{:content => "http://www.thepetedesign.com/demos/onepage_scroll_demo.html", :property => "og:url"}/
+        %meta{:content => "http://www.thepetedesign.com/images/onepage_scroll_image.png", :property => "og:image"}/
+        %link#favicon{:href => "favicon.png", :rel => "shortcut icon"}/
+        %meta{:content => "Pete R.", :name => "author"}/
+        %link{:href => "http://www.thepetedesign.com/demos/onepage_scroll_demo.html", :rel => "canonical"}/
+        %link{:href => "http://fonts.googleapis.com/css?family=Pacifico:400", :rel => "stylesheet", :type => "text/css"}/
+        %script{:src => "http://code.jquery.com/jquery-1.9.1.js", :type => "text/javascript"}
+        %meta{:content => "initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no", :name => "viewport"}/
+        = stylesheet_link_tag "style.css","http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+        = javascript_include_tag "all.js"
+
+
+    %body
+        = yield
+:javascript
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+      });

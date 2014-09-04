@@ -1,0 +1,282 @@
+html
+  height: 100%
+
+body
+  background: #111215
+  padding: 0
+  text-align: center
+  font-family: 'open sans'
+  position: relative
+  margin: 0
+  height: 100%
+  -webkit-font-smoothing: antialiased
+
+.wrapper
+  height: 100% !important
+  height: 100%
+  margin: 0 auto
+  overflow: hidden
+
+
+
+h1, h2
+  width: 100%
+  float: left
+
+h1
+  margin-top: 100px
+  color: #ffffff
+  margin-bottom: 5px
+  font-size: 70px
+  letter-spacing: -4px
+  font-weight: 900 !important
+h2
+  color: #d98b3d
+  font-weight: 100
+  margin-top: 0
+  margin-bottom: 10px
+
+.main
+  float: left
+  width: 100%
+  margin: 0 auto
+  h1
+    padding: 150px 50px
+    float: left
+    width: 100%
+    font-size: 45px
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    font-weight: 100
+    color: white
+    margin: 0
+
+.btn
+  display: inline-block
+  border: 4px solid #A2261E
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  background: #CC3126
+  display: inline-block
+  line-height: 100%
+  padding: 0.7em
+  text-decoration: none
+  color: #fff
+  width: 100px
+  line-height: 140%
+  font-size: 17px
+  font-family: open sans
+  font-weight: bold
+
+
+.btn
+  width: 200px
+  color: rgb(255, 255, 255)
+  border: 4px solid rgb(162, 203, 203)
+  background: rgba(72, 198, 198, 0.75)
+
+.clear
+  width: auto
+
+.btn:hover
+  background: #444
+
+.btns
+  width: 410px
+  margin: 50px auto
+
+header
+  position: relative
+  z-index: 10
+
+.main section
+  .page_container
+    position: relative
+    top: 25%
+    margin: 0 auto 0
+    max-width: 950px
+    z-index: 3
+  overflow: hidden
+  &.page1
+    background: rgb(32, 26, 25)
+    .btns
+      clear: both
+      text-align: center
+      width: 435px
+      float: left
+      a
+        text-align: center
+    h1
+      text-align: left
+      padding: 0
+      margin-bottom: 15px
+      font-size: 70px
+      color: #ffffff
+    h2
+      color: rgba(96, 199, 230, 0.85)
+      text-align: center
+      width: 435px
+      line-height: 160%
+  .page_container .btns
+    clear: both
+    text-align: center
+    width: 435px
+    a
+      text-align: center
+  &.page2
+    background: #555557
+    .page_container
+      margin-top: 20px
+      position: relative
+      float: right
+      overflow: hidden
+    h1
+      text-align: center
+      padding: 0
+      margin-bottom: 15px
+      font-size: 50px
+      letter-spacing: -1px
+      color: white
+    h2
+      color: rgba(255, 255, 255, 0.85)
+      text-align: center
+      line-height: 160%
+      font-weight: 100
+
+.viewing-page-2
+  background: rgba(0, 0, 0, 0.25)
+  color: #FFF
+
+.main section.page3
+  background: #1ABC9C
+  .page_container
+    overflow: hidden
+    width: 500px
+    right: -285px
+    float: left
+    .btns
+      clear: both
+      text-align: center
+      width: 435px
+      position: relative
+      left: -120px
+      a
+        text-align: center
+
+  h1
+    text-align: left
+    padding: 0
+    margin-bottom: 0
+    font-size: 70px
+    letter-spacing: -1px
+    color: black
+  h2
+    color: rgba(0, 0, 0, 0.85)
+    text-align: left
+    line-height: 160%
+    font-weight: 100
+    font-size: 21px
+.main section.page4
+  background: #A2261E
+body.disabled-onepage-scroll
+  .onepage-wrapper section
+    min-height: 100%
+    height: auto
+  .main section
+    .page_container, &.page3 .page_container
+      padding: 20px
+      margin-top: 150px
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+  section .page_container
+    h1
+      text-align: center
+      font-size: 50px
+    h2, .credit, .btns
+      text-align: center
+      width: 100%
+  .main section.page3 .page_container
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+    right: 0
+body, html
+  margin: 0
+  overflow: hidden
+  -webkit-transition: opacity 400ms
+  -moz-transition: opacity 400ms
+  transition: opacity 400ms
+
+body, .onepage-wrapper, html
+  display: block
+  position: static
+  padding: 0
+  width: 100%
+  height: 100%
+
+.onepage-wrapper
+  width: 100%
+  height: 100%
+  display: block
+  position: relative
+  padding: 0
+  -webkit-transform-style: preserve-3d
+  .section
+    width: 100%
+    height: 100%
+
+.onepage-pagination
+  position: absolute
+  right: 10px
+  top: 50%
+  z-index: 5
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    padding: 0
+    text-align: center
+    a
+      padding: 10px
+      width: 4px
+      height: 4px
+      display: block
+      &:before
+        content: ''
+        position: absolute
+        width: 4px
+        height: 4px
+        background: rgba(0, 0, 0, 0.85)
+        border-radius: 10px
+        -webkit-border-radius: 10px
+        -moz-border-radius: 10px
+      &.active:before
+        width: 10px
+        height: 10px
+        background: none
+        border: 1px solid black
+        margin-top: -4px
+        left: 8px
+
+.disabled-onepage-scroll
+  overflow: auto
+  .wrapper
+    overflow: auto
+  .onepage-wrapper
+    .section
+      position: relative !important
+      top: auto !important
+      left: auto !important
+    -webkit-transform: none !important
+    -moz-transform: none !important
+    transform: none !important
+    -ms-transform: none !important
+    min-height: 100%
+  .onepage-pagination
+    display: none
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html
+  position: inherit
