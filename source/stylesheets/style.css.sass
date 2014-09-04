@@ -10,19 +10,14 @@ body
   margin: 0
   height: 100%
   -webkit-font-smoothing: antialiased
-
 .wrapper
   height: 100% !important
   height: 100%
   margin: 0 auto
   overflow: hidden
-
-
-
 h1, h2
   width: 100%
   float: left
-
 h1
   margin-top: 100px
   color: #ffffff
@@ -51,41 +46,8 @@ h2
     font-weight: 100
     color: white
     margin: 0
-
-.btn
-  display: inline-block
-  border: 4px solid #A2261E
-  border-radius: 5px
-  -moz-border-radius: 5px
-  -webkit-border-radius: 5px
-  background: #CC3126
-  display: inline-block
-  line-height: 100%
-  padding: 0.7em
-  text-decoration: none
-  color: #fff
-  width: 100px
-  line-height: 140%
-  font-size: 17px
-  font-family: open sans
-  font-weight: bold
-
-
-.btn
-  width: 200px
-  color: rgb(255, 255, 255)
-  border: 4px solid rgb(162, 203, 203)
-  background: rgba(72, 198, 198, 0.75)
-
 .clear
   width: auto
-
-.btn:hover
-  background: #444
-
-.btns
-  width: 410px
-  margin: 50px auto
 
 header
   position: relative
@@ -101,13 +63,6 @@ header
   overflow: hidden
   &.page1
     background: rgb(32, 26, 25)
-    .btns
-      clear: both
-      text-align: center
-      width: 435px
-      float: left
-      a
-        text-align: center
     h1
       text-align: left
       padding: 0
@@ -119,14 +74,9 @@ header
       text-align: center
       width: 435px
       line-height: 160%
-  .page_container .btns
-    clear: both
-    text-align: center
-    width: 435px
-    a
-      text-align: center
+
   &.page2
-    background: #555557
+    background: #9ab5b0
     .page_container
       margin-top: 20px
       position: relative
@@ -138,9 +88,9 @@ header
       margin-bottom: 15px
       font-size: 50px
       letter-spacing: -1px
-      color: white
+      color: #45394a
     h2
-      color: rgba(255, 255, 255, 0.85)
+      color: rgba(116, 82, 101, 0.85)
       text-align: center
       line-height: 160%
       font-weight: 100
@@ -156,15 +106,6 @@ header
     width: 500px
     right: -285px
     float: left
-    .btns
-      clear: both
-      text-align: center
-      width: 435px
-      position: relative
-      left: -120px
-      a
-        text-align: center
-
   h1
     text-align: left
     padding: 0
@@ -179,7 +120,10 @@ header
     font-weight: 100
     font-size: 21px
 .main section.page4
-  background: #A2261E
+  background: #a0a296
+  color: #663e1e
+  h1
+    color: #532f1a
 body.disabled-onepage-scroll
   .onepage-wrapper section
     min-height: 100%
@@ -195,7 +139,7 @@ body.disabled-onepage-scroll
     h1
       text-align: center
       font-size: 50px
-    h2, .credit, .btns
+    h2, .credit
       text-align: center
       width: 100%
   .main section.page3 .page_container
@@ -260,23 +204,3 @@ body, .onepage-wrapper, html
         border: 1px solid black
         margin-top: -4px
         left: 8px
-
-.disabled-onepage-scroll
-  overflow: auto
-  .wrapper
-    overflow: auto
-  .onepage-wrapper
-    .section
-      position: relative !important
-      top: auto !important
-      left: auto !important
-    -webkit-transform: none !important
-    -moz-transform: none !important
-    transform: none !important
-    -ms-transform: none !important
-    min-height: 100%
-  .onepage-pagination
-    display: none
-
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html
-  position: inherit
