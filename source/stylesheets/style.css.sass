@@ -15,6 +15,14 @@ body
   height: 100%
   margin: 0 auto
   overflow: hidden
+
+input[placeholder], [placeholder], *[placeholder]
+  color: rgb(27, 34, 79) !important
+
+  &::-webkit-input-placeholder, &:-moz-placeholder
+    color: rgb(27, 34, 79)
+  &:-ms-input-placeholder
+    color: rgb(27, 34, 79)
 .navbar-default
   background-color: transparent !important
   border-color: transparent !important
@@ -31,6 +39,7 @@ body
 
         &:hover
           color: white !important
+
   .navbar-brand
     color: white !important
     font-size: 2.5em
@@ -202,9 +211,9 @@ header
     padding: 0
     font-size: 50px
     letter-spacing: -1px
-    color: whitesmoke
+    color: #dddddd
   h2
-    color: rgba(193, 196, 191, 0.85)
+    color: rgba(163, 166, 161, 0.85)
     text-align: left
     line-height: 140%
     font-weight: 100
@@ -219,10 +228,103 @@ header
     left: 350px
 
 .main section.page4
-  background: #a0a296
-  color: #663e1e
-  h1
-    color: #532f1a
+  background: #f2f4e8
+  .page_container
+    color: #1f265d
+    position: absolute
+    top: -10px
+    left: 150px
+    text-align: center
+    width: 100%
+    .container
+      position: relative
+      top: -60px
+    h1
+      color: #1f265d
+      letter-spacing: -2px
+      font-size: 42px
+      width: 1090px
+    .form-group
+      position: relative
+      top: 8px
+    h2
+      position: relative
+      text-align: left
+      color: #1f265d
+      font-size: 25px
+      top: -15px
+      input
+        color: #1f265d
+    .form-control
+      border: 0px !important
+
+    .btn-purple
+      background: transparent
+      border: 3px solid #2e357b
+      width: 150px
+      float: left
+      position: relative
+      left: 10px
+      top: 40px
+      letter-spacing: 1px
+      height: 50px
+      color: #2d348a
+      padding-left: 20px
+.phone_number
+  float: left
+.page_web
+  float: left
+  position: relative
+  top: -30px
+.where_are_us
+  float: left
+  position: relative
+  top: -55px
+.col-md-4
+  position: relative
+  top: 30px
+  left: 50px
+  .adress_book
+    position: relative
+    float: left
+    top: -50px
+  h2
+    margin-top: -30px
+div
+  .social_icon
+    width: 90%
+    height: 60px
+    position: relative
+    margin-top: 100px
+    margin-left: -13px
+    li
+      width: 40px
+      height: 40px
+      background-color: #dee1d2
+      text-decoration: none
+      text-align: center
+      float: left
+      display: inline-block
+      margin-left: 10px
+      position: relative
+      left: -35px
+      margin-top: -8px
+      &:hover
+        background-color: #1f265d
+        color: #e5e8d9
+        z-index: 2
+      a
+        width: 100%
+        height: auto
+        text-align: center
+        position: relative
+        top: 10px
+        color: #1f265d
+        &:hover
+          color: #e5e8d9
+
+
+
 body.disabled-onepage-scroll
   .onepage-wrapper section
     min-height: 100%

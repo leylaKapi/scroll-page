@@ -46,5 +46,52 @@
       = image_tag 'macbook-imac.png',class: 'imac_img'
     %section.page4
       .page_container
-        %h1 Fourth page scroll
-        %h2 Create an scroll page plugin
+        %h1 Contact us. We'd love to hear from you
+        .container
+          .row
+            .col-md-8
+              %form{:role => "form"}
+                .form-group
+                  %h2 Get your info
+                .form-group
+                  %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}/
+                .form-group
+                  %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}/
+                .form-group
+                  %textarea.form-control{:rows => "3", :placeholder => "Enter comment"}
+                %button.btn.btn-purple{:type => "submit"} SUBMIT
+            .col-md-4
+              %h2.contact_us Contact us
+              %b.phone_number
+                %i.fa.fa-phone
+                  +850 885 0 456
+              %br
+                %br
+              %address.page_web
+                %i.fa.fa-globe
+                %a{href: 'http://lab2023.com/'}lab2023.com
+              %br
+                %br
+              %p.adress_book
+                %i.fa.fa-map-marker
+                  LAB2023 A.Ş. D- Blok 116 / 117
+              %p.where_are_us
+                Pamukkale Technocity, Denizli / Turkey
+              %div
+                %h2 Social media
+                %ul.social_icon
+                  %li.square_frame
+                    %a{href: '#'}
+                      %i.fa.fa-map-marker
+                  %li.square_frame
+                    %a{href: '#'}
+                      %i.fa.fa-map-marker
+                  %li.square_frame
+                    %a{href: '#'}
+                      %i.fa.fa-map-marker
+                  %li.square_frame
+                    %a{href: '#'}
+                      %i.fa.fa-map-marker
+                  %li.square_frame
+                    %a{href: '#'}
+                      %i.fa.fa-map-marker
