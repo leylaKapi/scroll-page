@@ -1,7 +1,7 @@
 scroll-page
 ===========
 
-:heartbeat:  One Page Love Scroll Page
+:purple_heart:  One Page Love Scroll Page
 
 ![home-page](source/images/capture_image-home.png)
 
